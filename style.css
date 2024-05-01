@@ -2,49 +2,48 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.container {
+.main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 560px;
-  width: 470px;
+  justify-content: center;
+  height: 700px;
+  padding: 20px;
+}
+
+.container {
+  width: 500px;
   background-color: rgb(129, 149, 168);
   border: 2px solid rgb(79, 99, 118);
   border-radius: 10px;
 }
 
-.container>*:first-child {
-  width: 100%;
-}
-
-
 .screen {
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
   padding: 10px;
-  height: 80px;
-  width: 100%;
   background-color: rgb(202, 202, 202);
   border: 2px solid rgb(79, 99, 118);
   border-radius: 5px;
 }
 
-.numbers {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.last {
+  min-height: 30px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.current {
+  min-height: 50px;
+  font-size: 32px;
+}
+
+.clear {
+  margin-left: 30px;
 }
 
 .operators {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-self: center;
 }
 
 .screen,
@@ -53,24 +52,41 @@ body {
   margin: 30px;
 }
 
+.screen,
+.row {
+  width: 100%;
+}
+
 .row {
   display: flex;
+  justify-content: center;
 }
 
 button {
-  width: 55px;
   padding: 20px;
   margin: 7px;
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 20px;
   background-color: rgb(142, 199, 221);
   border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 button:hover {
-  background-color: rgb(112, 169, 191);
+  background-color: rgb(132, 179, 201);
 }
 
 button:active {
-  background-color: rgb(92, 139, 161);
+  background-color: rgb(122, 159, 181);
+}
+
+.button-red {
+  background-color: rgb(212, 63, 31);
+}
+
+.button-red:hover {
+  background-color: rgb(192, 53, 21);
+}
+
+.button-red:active {
+  background-color: rgb(172, 43, 11);
 }
